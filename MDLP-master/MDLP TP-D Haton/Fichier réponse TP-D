@@ -1,0 +1,35 @@
+Exercice 1:
+
+1) Le fichier turingmachine.py contient une classe "TuringMachine" composée de quatres méthodes:
+
+- "__init__"
+- "parse_rule"
+- "print_tape"
+- "step"
+
+On importe la bibliothèque "sys" au début du fichier.
+
+
+
+2) en lançant la machine décrite dans "exemple.tm" on remarque que l'Etat initial de la machine s'affiche mais que rien ne se passe ensuite. 
+
+
+
+3)
+a) Dans la méthode "parse_rule", 
+les règles correctement formées sont retournées dans une paire composée d'une paire (état courant et symbole lu)
+et d'un triplé ( nouvel état , nouveau symbole et nouvelle direction )
+
+b)Les valeurs python correspondantes aux deux règles de exemple.tm sont :
+- if d == '>':
+                self._head += 1
+
+- else:
+                self._head -= 1
+
+c) le dictionnaire "__rule" est situé dans "__init__". 
+Il y stock l'etat courant et le symbole lu (clé) ainsi que le nouvel état, le nouveau symbole et la nouvelle direction (définition). 
+Le dictionnaire stock donc la paire correspondant à chaques règles correctement construite dans "parse_rule"
+
+4) Voir "turingmachine.py" ligne 41
+
