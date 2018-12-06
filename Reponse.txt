@@ -1,0 +1,22 @@
+Exercice 1:
+
+3) lorsque on lance le jeu cela nous affiche "Gagné" sans avoir joué.
+Cela est dû à la condition 
+                        "if (CharList_isEmpty(self->goodGuesses)) {
+                             Display_won();" 
+                            }
+    dans la fonction "Pendu_lauch" 
+    du fichier "pendu.c"
+    Qui considère une chaine de caractères vide comme une chaine entierment révée.
+
+4) la garde d'inclusion correspond aux "#ifndef"
+grâce à cela, le .h ne pourra être inclus qu'une fois par .c
+
+
+
+Exercice 2:
+
+
+1)
+
+
